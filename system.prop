@@ -21,7 +21,8 @@ ro.dalvik.vm.enable_uffd_gc=true
 # Display
 debug.sf.enable_hwc_vds=1
 debug.renderengine.backend=skiavkthreaded
-debug.sf.latch_unsignaled=1
+debug.sf.latch_unsignaled=0
+debug.sf.auto_latch_unsignaled=true
 debug.hwui.skia_tracing_enabled=false
 debug.hwui.skia_use_perfetto_track_events=false
 
