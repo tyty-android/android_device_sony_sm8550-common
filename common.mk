@@ -252,6 +252,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libpalclient
 
+PRODUCT_PACKAGES += \
+    android.hardware.media.c2@1.0.vendor \
+    android.hardware.media.c2@1.1.vendor \
+    android.hardware.media.c2@1.2.vendor
+
 # Memtrack
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.memtrack-service
