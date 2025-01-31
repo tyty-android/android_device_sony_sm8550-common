@@ -74,5 +74,8 @@ rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so
 # SSR
 persist.vendor.ssr.restart_level=ALL_ENABLE
 
+# System
+persist.arm64.memtag.system_server=off
+
 # Vendor
 ro.vendor.qti.va_aosp.support=1
