@@ -472,9 +472,14 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/privapp-permissions-wfd.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-wfd.xml
 
+TARGET_SHIPS_XPERIA_SETTINGS_MENU := true
+TARGET_SUPPORTS_HIGH_REFRESH_RATE := true
+TARGET_SUPPORTS_HIGH_POLLING_RATE_LXS_TS := true
+TARGET_SUPPORTS_IMAGE_ENHANCEMENT := true
+TARGET_SUPPORTS_SOUND_ENHANCEMENT_ADDON := true
+
 # XperiaParts
-PRODUCT_PACKAGES += \
-    XperiaParts
+$(call inherit-product, hardware/sony/XperiaModules.mk)
 
 # Inherit from proprietary files makefile
 $(call inherit-product, vendor/sony/sm8550-common/sm8550-common-vendor.mk)
