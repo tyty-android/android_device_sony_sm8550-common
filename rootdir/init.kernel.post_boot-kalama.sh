@@ -382,4 +382,15 @@ case "$console_config" in
 	;;
 esac
 
+# Network tuning
+
+echo "fq" > /proc/sys/net/core/default_qdisc
+echo "bbr" > /proc/sys/net/ipv4/tcp_congestion_control
+echo 131072 > /proc/sys/net/ipv4/tcp_notsent_lowat
+echo -2 > /proc/sys/net/ipv4/tcp_adv_win_scale
+echo 104857600 > /proc/sys/net/core/rmem_max
+echo 104857600 > /proc/sys/net/core/wmem_max
+echo "524288 1048576 104857600" > /proc/sys/net/ipv4/tcp_rmem
+echo "262144 524288 104857600" > /proc/sys/net/ipv4/tcp_wmem
+
 setprop vendor.post_boot.parsed 1
