@@ -161,9 +161,9 @@ TARGET_USES_QCOM_MM_AUDIO := true
 TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
 
 # Health
-TARGET_HEALTH_CHARGING_CONTROL_CHARGING_PATH := /sys/class/battchg_ext/smart_charging_interruption
-TARGET_HEALTH_CHARGING_CONTROL_CHARGING_ENABLED := 0
-TARGET_HEALTH_CHARGING_CONTROL_CHARGING_DISABLED := 1
+$(call soong_config_set,lineage_health,charging_control_charging_path,/sys/class/battchg_ext/smart_charging_interruption)
+$(call soong_config_set,lineage_health,charging_control_charging_enabled,1)
+$(call soong_config_set,lineage_health,charging_control_charging_disabled,0)
 
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
