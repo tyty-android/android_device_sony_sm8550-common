@@ -167,13 +167,13 @@ echo 0 > /sys/devices/system/cpu/cpufreq/policy7/walt/pl
 
 # Reduce urgent gc sleep time.
 echo "5" > /dev/sys/fs/by-name/userdata/gc_urgent_sleep_time
-echo "5" > /sys/fs/f2fs/dm-54/gc_urgent_sleep_time
+echo "5" > /sys/fs/f2fs/dm-49/gc_urgent_sleep_time
 echo "5" > /sys/fs/f2fs/sda52/gc_urgent_sleep_time
 
 # Tune F2FS.
-echo "20" > /sys/fs/f2fs/dm-54/min_fsync_blocks
+echo "20" > /sys/fs/f2fs/dm-49/min_fsync_blocks
 echo "20" > /sys/fs/f2fs/sda52/min_fsync_blocks
-echo "10000" > /sys/fs/f2fs/dm-54/max_discard_issue_time
+echo "10000" > /sys/fs/f2fs/dm-49/max_discard_issue_time
 echo "10000" > /sys/fs/f2fs/sda52/max_discard_issue_time
 
 # Tune Userdata.
