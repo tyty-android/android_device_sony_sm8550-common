@@ -129,6 +129,132 @@ vendor/lib/rfsa/adsp/libworker_pool.so
 system_ext/lib64/com.qualcomm.qti.ant@1.0.so
 
 # Audio
+# v Dynamically needed by libaudioprocessing
+system/lib64/libaudio-resampler.so
+# v Dynamically needed by modified audioserver
+system_ext/lib64/libaudiohalvendorextn.so
+system_ext/lib64/qti-audio-types-aidl-V1-ndk.so
+# v Dynamically needed by libavenhancements
+system_ext/lib64/librecpp_intf.so
+system_ext/lib64/libAdaptiveEQ_recpp.so
+system_ext/lib64/libAGC_recpp.so
+system_ext/lib64/libANS_recpp.so
+system_ext/lib64/libCompressor_recpp.so
+system_ext/lib64/libHDR_recpp.so
+system_ext/lib64/libHPFilter_recpp.so
+system_ext/lib64/libLimiter_recpp.so
+system_ext/lib64/libWNR.so
+system_ext/lib64/libWNR_intf.so
+system_ext/etc/hdr_config/ans_off/ans_config.txt
+system_ext/etc/hdr_config/ans_on/ans_config.txt
+system_ext/etc/hdr_config/main_inv_ls/RPP_BiquadHPF_config.txt
+system_ext/etc/hdr_config/main_inv_ls/RPP_EQLeftTop_config.txt
+system_ext/etc/hdr_config/main_inv_ls/RPP_EQRightBottom_config.txt
+system_ext/etc/hdr_config/main_inv_ls/RPP_HDR.txt
+system_ext/etc/hdr_config/main_inv_ls/RPP_InputAGC_config.txt
+system_ext/etc/hdr_config/main_inv_ls/RPP_InputCompressor_config.txt
+system_ext/etc/hdr_config/main_inv_ls/RPP_Limiter_config.txt
+system_ext/etc/hdr_config/main_inv_ls/RPP_OutputCompressor_config.txt
+system_ext/etc/hdr_config/main_inv_pt/RPP_BiquadHPF_config.txt
+system_ext/etc/hdr_config/main_inv_pt/RPP_EQLeftTop_config.txt
+system_ext/etc/hdr_config/main_inv_pt/RPP_EQRightBottom_config.txt
+system_ext/etc/hdr_config/main_inv_pt/RPP_HDR.txt
+system_ext/etc/hdr_config/main_inv_pt/RPP_InputAGC_config.txt
+system_ext/etc/hdr_config/main_inv_pt/RPP_InputCompressor_config.txt
+system_ext/etc/hdr_config/main_inv_pt/RPP_Limiter_config.txt
+system_ext/etc/hdr_config/main_inv_pt/RPP_OutputCompressor_config.txt
+system_ext/etc/hdr_config/main_ls/RPP_BiquadHPF_config.txt
+system_ext/etc/hdr_config/main_ls/RPP_EQLeftTop_config.txt
+system_ext/etc/hdr_config/main_ls/RPP_EQRightBottom_config.txt
+system_ext/etc/hdr_config/main_ls/RPP_HDR.txt
+system_ext/etc/hdr_config/main_ls/RPP_InputAGC_config.txt
+system_ext/etc/hdr_config/main_ls/RPP_InputCompressor_config.txt
+system_ext/etc/hdr_config/main_ls/RPP_Limiter_config.txt
+system_ext/etc/hdr_config/main_ls/RPP_OutputCompressor_config.txt
+system_ext/etc/hdr_config/main_pt/RPP_BiquadHPF_config.txt
+system_ext/etc/hdr_config/main_pt/RPP_EQLeftTop_config.txt
+system_ext/etc/hdr_config/main_pt/RPP_EQRightBottom_config.txt
+system_ext/etc/hdr_config/main_pt/RPP_HDR.txt
+system_ext/etc/hdr_config/main_pt/RPP_InputAGC_config.txt
+system_ext/etc/hdr_config/main_pt/RPP_InputCompressor_config.txt
+system_ext/etc/hdr_config/main_pt/RPP_Limiter_config.txt
+system_ext/etc/hdr_config/main_pt/RPP_OutputCompressor_config.txt
+system_ext/etc/hdr_config/none_inv_ls/RPP_BiquadHPF_config.txt
+system_ext/etc/hdr_config/none_inv_ls/RPP_EQLeftTop_config.txt
+system_ext/etc/hdr_config/none_inv_ls/RPP_EQRightBottom_config.txt
+system_ext/etc/hdr_config/none_inv_ls/RPP_HDR.txt
+system_ext/etc/hdr_config/none_inv_ls/RPP_InputAGC_config.txt
+system_ext/etc/hdr_config/none_inv_ls/RPP_InputCompressor_config.txt
+system_ext/etc/hdr_config/none_inv_ls/RPP_Limiter_config.txt
+system_ext/etc/hdr_config/none_inv_ls/RPP_OutputCompressor_config.txt
+system_ext/etc/hdr_config/none_inv_pt/RPP_BiquadHPF_config.txt
+system_ext/etc/hdr_config/none_inv_pt/RPP_EQLeftTop_config.txt
+system_ext/etc/hdr_config/none_inv_pt/RPP_EQRightBottom_config.txt
+system_ext/etc/hdr_config/none_inv_pt/RPP_HDR.txt
+system_ext/etc/hdr_config/none_inv_pt/RPP_InputAGC_config.txt
+system_ext/etc/hdr_config/none_inv_pt/RPP_InputCompressor_config.txt
+system_ext/etc/hdr_config/none_inv_pt/RPP_Limiter_config.txt
+system_ext/etc/hdr_config/none_inv_pt/RPP_OutputCompressor_config.txt
+system_ext/etc/hdr_config/none_ls/RPP_BiquadHPF_config.txt
+system_ext/etc/hdr_config/none_ls/RPP_EQLeftTop_config.txt
+system_ext/etc/hdr_config/none_ls/RPP_EQRightBottom_config.txt
+system_ext/etc/hdr_config/none_ls/RPP_HDR.txt
+system_ext/etc/hdr_config/none_ls/RPP_InputAGC_config.txt
+system_ext/etc/hdr_config/none_ls/RPP_InputCompressor_config.txt
+system_ext/etc/hdr_config/none_ls/RPP_Limiter_config.txt
+system_ext/etc/hdr_config/none_ls/RPP_OutputCompressor_config.txt
+system_ext/etc/hdr_config/none_pt/RPP_BiquadHPF_config.txt
+system_ext/etc/hdr_config/none_pt/RPP_EQLeftTop_config.txt
+system_ext/etc/hdr_config/none_pt/RPP_EQRightBottom_config.txt
+system_ext/etc/hdr_config/none_pt/RPP_HDR.txt
+system_ext/etc/hdr_config/none_pt/RPP_InputAGC_config.txt
+system_ext/etc/hdr_config/none_pt/RPP_InputCompressor_config.txt
+system_ext/etc/hdr_config/none_pt/RPP_Limiter_config.txt
+system_ext/etc/hdr_config/none_pt/RPP_OutputCompressor_config.txt
+system_ext/etc/hdr_config/selfie_inv_ls/RPP_BiquadHPF_config.txt
+system_ext/etc/hdr_config/selfie_inv_ls/RPP_EQLeftTop_config.txt
+system_ext/etc/hdr_config/selfie_inv_ls/RPP_EQRightBottom_config.txt
+system_ext/etc/hdr_config/selfie_inv_ls/RPP_HDR.txt
+system_ext/etc/hdr_config/selfie_inv_ls/RPP_InputAGC_config.txt
+system_ext/etc/hdr_config/selfie_inv_ls/RPP_InputCompressor_config.txt
+system_ext/etc/hdr_config/selfie_inv_ls/RPP_Limiter_config.txt
+system_ext/etc/hdr_config/selfie_inv_ls/RPP_OutputCompressor_config.txt
+system_ext/etc/hdr_config/selfie_inv_pt/RPP_BiquadHPF_config.txt
+system_ext/etc/hdr_config/selfie_inv_pt/RPP_EQLeftTop_config.txt
+system_ext/etc/hdr_config/selfie_inv_pt/RPP_EQRightBottom_config.txt
+system_ext/etc/hdr_config/selfie_inv_pt/RPP_HDR.txt
+system_ext/etc/hdr_config/selfie_inv_pt/RPP_InputAGC_config.txt
+system_ext/etc/hdr_config/selfie_inv_pt/RPP_InputCompressor_config.txt
+system_ext/etc/hdr_config/selfie_inv_pt/RPP_Limiter_config.txt
+system_ext/etc/hdr_config/selfie_inv_pt/RPP_OutputCompressor_config.txt
+system_ext/etc/hdr_config/selfie_ls/RPP_BiquadHPF_config.txt
+system_ext/etc/hdr_config/selfie_ls/RPP_EQLeftTop_config.txt
+system_ext/etc/hdr_config/selfie_ls/RPP_EQRightBottom_config.txt
+system_ext/etc/hdr_config/selfie_ls/RPP_HDR.txt
+system_ext/etc/hdr_config/selfie_ls/RPP_InputAGC_config.txt
+system_ext/etc/hdr_config/selfie_ls/RPP_InputCompressor_config.txt
+system_ext/etc/hdr_config/selfie_ls/RPP_Limiter_config.txt
+system_ext/etc/hdr_config/selfie_ls/RPP_OutputCompressor_config.txt
+system_ext/etc/hdr_config/selfie_pt/RPP_BiquadHPF_config.txt
+system_ext/etc/hdr_config/selfie_pt/RPP_EQLeftTop_config.txt
+system_ext/etc/hdr_config/selfie_pt/RPP_EQRightBottom_config.txt
+system_ext/etc/hdr_config/selfie_pt/RPP_HDR.txt
+system_ext/etc/hdr_config/selfie_pt/RPP_InputAGC_config.txt
+system_ext/etc/hdr_config/selfie_pt/RPP_InputCompressor_config.txt
+system_ext/etc/hdr_config/selfie_pt/RPP_Limiter_config.txt
+system_ext/etc/hdr_config/selfie_pt/RPP_OutputCompressor_config.txt
+system_ext/etc/hdr_config/wnr_off/wnr_config.txt
+system_ext/etc/hdr_config/wnr_off/wnr_params.txt|e07d5c871dee6ee330c521877d85a47e0956b97d
+system_ext/etc/hdr_config/wnr_on/wnr_config.txt
+system_ext/etc/hdr_config/wnr_on/wnr_params.txt|af87900e4dd490d30a074093646512cd0d235f38
+vendor/etc/DrangeparaAAC128.bin
+vendor/etc/DrangeparaAAC256.bin
+vendor/etc/DrangeparaAAC64.bin
+vendor/etc/DrangeparaMP3_128.bin
+vendor/etc/DrangeparaMP3_160.bin
+vendor/etc/DrangeparaMP3_192.bin
+vendor/etc/DrangeparaPCM441.bin
+vendor/etc/DrangeparaPCM48.bin
 vendor/etc/models/acd/event.eai
 vendor/etc/models/acd/music.eai
 vendor/etc/models/acd/speech.eai
@@ -159,13 +285,21 @@ vendor/lib64/soundfx/libshoebox.so
 
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.1-service-qti
+vendor/bin/qsap_dcfd
 vendor/etc/init/android.hardware.bluetooth@1.1-service-qti.rc
+vendor/etc/init/dcfd.rc
+vendor/etc/seccomp_policy/qsap_dcfd.policy
 vendor/etc/vintf/manifest/bttpi-saidl.xml
 vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
 vendor/lib64/hw/android.hardware.bluetooth@1.1-impl-qti.so
 vendor/lib64/hw/vendor.qti.hardware.bttpi-impl.so
 vendor/lib64/libbt-hidlclient.so
 vendor/lib64/libbtnv.so
+vendor/lib64/libDcfHalBleProto.so
+vendor/lib64/libDcfHalFramework.so
+vendor/lib64/libDcfHalLogger.so
+vendor/lib64/libDcfHalQtiMutex.so
+vendor/lib64/libSensorsInterface.so
 vendor/lib64/libsoc_helper.so
 vendor/lib64/vendor.qti.hardware.bttpi-V2-ndk.so
 
@@ -417,6 +551,12 @@ vendor/lib64/libhdr_tm.so
 
 # Display (HWC)
 vendor/bin/qdcmss
+vendor/etc/display/backlight_calib_r66451_amoled_cmd_mode_dsi_visionox_panel_with_DSC.xml
+vendor/etc/display/backlight_calib_r66451_amoled_video_mode_dsi_visionox_panel_with_DSC.xml
+vendor/etc/display/backlight_calib_vtdr6130_amoled_cmd_mode_dsi_visionox_panel_with_DSC.xml
+vendor/etc/display/backlight_calib_vtdr6130_amoled_qsync_cmd_mode_dsi_visionox_panel_with_DSC.xml
+vendor/etc/display/backlight_calib_vtdr6130_amoled_qsync_video_mode_dsi_visionox_panel_with_DSC.xml
+vendor/etc/display/backlight_calib_vtdr6130_amoled_video_mode_dsi_visionox_panel_with_DSC.xml
 vendor/etc/init/qdcmss.rc
 vendor/etc/snapdragon_color_libs_config.xml
 vendor/lib64/libbacklight-calib.so
@@ -554,6 +694,7 @@ vendor/bin/hw/android.hardware.gnss-aidl-service-qti
 vendor/bin/loc_launcher
 vendor/bin/lowi-server
 vendor/bin/mlid
+vendor/bin/qsap_location
 vendor/bin/slim_daemon
 vendor/bin/xtra-daemon
 vendor/bin/xtwifi-client
@@ -562,6 +703,7 @@ vendor/etc/batching.conf
 vendor/etc/gnss_antenna_info.conf
 vendor/etc/init/android.hardware.gnss-aidl-service-qti.rc
 vendor/etc/init/loc-launcher.rc
+vendor/etc/init/vendor.qsap.location.rc
 vendor/etc/izat.conf
 vendor/etc/lowi.conf
 vendor/etc/sap.conf
@@ -795,6 +937,9 @@ vendor/lib64/vendor.qti.hardware.limits@1.1.so
 vendor/lib64/vendor.qti.hardware.limits@1.2.so
 
 # Listen
+system_ext/lib64/liblistenjni.qti.so
+system_ext/lib64/liblsmclient.so
+system_ext/lib64/liblistensoundmodel2.qti.so
 vendor/lib64/libcapiv2svacnnvendor.so
 vendor/lib64/libcapiv2svarnnvendor.so
 vendor/lib64/libcapiv2udk7vendor.so
@@ -807,6 +952,7 @@ vendor/lib64/liblistensoundmodel2vendor.so
 odm/etc/media_profiles_V1_0.xml
 system_ext/lib64/libmmosal.so
 system_ext/lib64/libmmparser_lite.so
+vendor/bin/COSNet_spatial_8bit_quantized.serialized.bin
 vendor/bin/hw/qconfigservice
 vendor/bin/hw/vendor.qti.media.c2@1.0-service
 vendor/bin/hw/vendor.qti.media.c2audio@1.0-service
@@ -869,6 +1015,13 @@ vendor/lib64/vendor.qti.hardware.factory@1.0.so
 vendor/lib64/vendor.qti.hardware.factory@1.1.so
 
 # Memory
+
+# Mmwave
+vendor/bin/hw/vendor.semc.hardware.mmwavedirection@1.1-service
+vendor/etc/init/vendor.semc.hardware.mmwavedirection@1.1-service.rc
+vendor/lib64/libmmwavemodule.so
+vendor/lib64/vendor.semc.hardware.mmwavedirection@1.0.so
+vendor/lib64/vendor.semc.hardware.mmwavedirection@1.1.so
 
 # Modem
 vendor/bin/mlog_qmi_service
@@ -1024,6 +1177,7 @@ vendor/etc/init/init.qti.qcv.rc
 vendor/bin/qesdk-manager
 vendor/etc/init/qesdk-manager.rc
 vendor/etc/seccomp_policy/qesdk.policy
+vendor/lib/dumb|da39a3ee5e6b4b0d3255bfef95601890afd80709
 vendor/lib64/libqesdk2_0.so
 vendor/lib64/libqesdk_manager.so
 vendor/lib64/vendor.qti.qesdhal@1.0.so
@@ -1272,10 +1426,16 @@ vendor/bin/subsystem_ramdump
 # Secd
 system_ext/lib64/libMiscTaWrapper.so:vendor/lib64/libMiscTaWrapper.so
 system_ext/etc/permissions/jp.co.sony.mc.misctasdklibrary.xml
+system_ext/etc/permissions/org.ifaa.android.manager.xml
 system_ext/framework/jp.co.sony.mc.misctasdklibrary.jar
+system_ext/framework/org.ifaa.android.manager.jar
+system_ext/lib64/libifaateeclientjni.sony.so
+system_ext/lib64/vendor.somc.hardware.ifaa@1.0.so
+vendor/bin/hw/vendor.semc.hardware.ifaa@1.0-service
 vendor/bin/hw/vendor.semc.hardware.secd@1.1-service
 vendor/bin/hw/vendor.somc.hardware.miscta@1.0-service
 vendor/etc/init/init.taqmi.rc
+vendor/etc/init/vendor.semc.hardware.ifaa@1.0-service.rc
 vendor/etc/init/vendor.semc.hardware.secd@1.1-service.rc
 vendor/etc/init/vendor.somc.hardware.miscta@1.0-service.rc
 vendor/lib64/libdevice_security_vendor.so
@@ -1283,6 +1443,7 @@ vendor/lib64/libifaa.so
 vendor/lib64/libmiscta.so
 vendor/lib64/librkp.so
 vendor/lib64/libsuntory.so
+vendor/lib64/vendor.somc.hardware.ifaa@1.0.so;MODULE_SUFFIX=_vendor
 vendor/lib64/vendor.somc.hardware.miscta@1.0.so
 vendor/lib64/vendor.somc.hardware.security.secd@1.1.so
 
@@ -1292,6 +1453,19 @@ vendor/etc/init/vendor.qti.secure_element@1.2-service.rc
 vendor/lib64/android.hardware.secure_element@1.0-impl.so
 vendor/lib64/libesepmconfig.so
 vendor/lib64/libesesbprovision.so
+
+# Secure Processor
+system_ext/etc/permissions/com.qti.media.secureprocessor.xml
+system_ext/framework/com.qti.media.secureprocessor.jar
+system_ext/lib64/vendor.qti.hardware.secureprocessor.common@1.0.so
+system_ext/lib64/vendor.qti.hardware.secureprocessor.config@1.0.so
+system_ext/lib64/vendor.qti.hardware.secureprocessor.device@1.0.so
+vendor/bin/hw/vendor.qti.hardware.secureprocessor@1.0
+vendor/etc/init/vendor.qti.hardware.secureprocessor@1.0.rc
+vendor/lib64/vendor.qti.hardware.secureprocessor.common@1.0.so;MODULE_SUFFIX=_vendor
+vendor/lib64/vendor.qti.hardware.secureprocessor.common@1.0-helper.so
+vendor/lib64/vendor.qti.hardware.secureprocessor.config@1.0.so;MODULE_SUFFIX=_vendor
+vendor/lib64/vendor.qti.hardware.secureprocessor.device@1.0.so;MODULE_SUFFIX=_vendor
 
 # Sensors
 vendor/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service
@@ -1395,6 +1569,7 @@ vendor/lib64/libsns_direct_channel_stub.so
 vendor/lib64/libsnsapi.so
 vendor/lib64/libsnsutils.so
 vendor/lib64/libssc.so
+vendor/lib64/libssc_default_listener.so
 vendor/lib64/sensors.ssc.so
 vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so
 
@@ -1477,6 +1652,7 @@ vendor/lib64/libvideoutils.so
 
 # VPP
 vendor/bin/vppservice
+vendor/etc/be_movie_spc
 vendor/etc/configstore/vpp.configstore.xml
 vendor/etc/init/vppservice.rc
 vendor/etc/vintf/manifest/vendor.qti.hardware.vpp@2.0-service.xml

@@ -1,0 +1,5 @@
+cc_library {
+    name: "av-audio-types-aidl-V1-ndk_shim",
+    system_ext_specific: true,
+    srcs: ["av_audio_types_aidl_v1_ndk_shim.cpp"],
+}
