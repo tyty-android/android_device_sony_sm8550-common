@@ -18,6 +18,7 @@ from extract_utils.main import (
 )
 
 namespace_imports = [
+    'device/sony/sm8550-common',
     'hardware/qcom-caf/sm8550',
     'hardware/qcom-caf/wlan',
     'hardware/sony',
@@ -54,6 +55,10 @@ lib_fixups: lib_fixups_user_type = {
         'vendor.qti.hardware.qccsyshal@1.2',
         'vendor.qti.hardware.qccvndhal@1.0',
         'vendor.qti.hardware.wifidisplaysession@1.0',
+        'vendor.somc.hardware.ifaa@1.0',
+        'vendor.qti.hardware.secureprocessor.common@1.0',
+        'vendor.qti.hardware.secureprocessor.config@1.0',
+        'vendor.qti.hardware.secureprocessor.device@1.0',
     ): lib_fixup_vendor_suffix,
 }
 
@@ -139,6 +144,38 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('libprotobuf-cpp-full.so', 'libprotobuf-cpp-full-21.7.so'),
     'vendor/bin/nv_updater': blob_fixup()
         .replace_needed('libcrypto.so', 'libcrypto-v33.so'),
+    'system_ext/lib64/libaudiohalvendorextn.so': blob_fixup()
+    .replace_needed(
+        'av-audio-types-aidl-V1-ndk.so', 'av-audio-types-aidl-ndk.so'
+    )
+    .replace_needed(
+        'android.media.audio.common.types-V3-ndk.so', 'android.media.audio.common.types-V4-ndk.so'
+    )
+    .add_needed(
+        'av-audio-types-aidl-V1-ndk_shim.so'
+    ),
+    (
+        'vendor/bin/qsap_dcfd',
+        'vendor/bin/qsap_location'
+    ): blob_fixup()
+           .binary_regex_replace(b'/vendor/lib/libqesdk2_0.so',
+                                 b'/vendor/lib/dumb\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00')
+           .binary_regex_replace(b'20bb1827f3cf9361ccdd8d2f081c2f90b4029d30e76dd1e41c59fd6a673a5f4b',
+                                 b'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855')
+           .binary_regex_replace(b'/vendor/lib/libqesdk_manager.so',
+                                 b'/vendor/lib/dumb\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00')
+           .binary_regex_replace(b'ee6011cfab2ae99adbb1859966736f095830674234d406bfb977a9466fb98617',
+                                 b'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855'),
+    'vendor/etc/seccomp_policy/gnss@2.0-qsap-location.policy': blob_fixup()
+    .add_line_if_missing(
+        'sched_get_priority_min: 1'
+    )
+    .add_line_if_missing(
+        'sched_get_priority_max: 1'
+    )
+    .add_line_if_missing(
+        'sched_setparam: 1'
+    ),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
