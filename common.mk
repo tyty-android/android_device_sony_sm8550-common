@@ -149,7 +149,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml
 
-# Fatab
+# FM Radio
+PRODUCT_PACKAGES += \
+    qcom.fmradio \
+    qcom.fmradio.xml
+
+# Fstab
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/fstab.default:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.qcom \
     $(LOCAL_PATH)/rootdir/fstab.default:$(TARGET_COPY_OUT_RECOVERY)/root/first_stage_ramdisk/fstab.qcom \
@@ -247,6 +252,9 @@ PRODUCT_PACKAGES += \
     android.hardware.media.c2@1.0.vendor \
     android.hardware.media.c2@1.1.vendor \
     android.hardware.media.c2@1.2.vendor
+
+PRODUCT_PACKAGES += \
+    libcom.android.media.swcodec.apexcodecs
 
 # Memtrack
 PRODUCT_PACKAGES += \
