@@ -419,6 +419,26 @@
         <fqname>@1.0::IMisctaGlobal/default</fqname>
     </hal>
     <hal format="hidl">
+        <name>vendor.somc.hardware.ifaa</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IIFAAManagerService</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@1.0::IIFAAManagerService/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.semc.hardware.mmwavedirection</name>
+        <transport>hwbinder</transport>
+        <version>1.1</version>
+        <interface>
+            <name>IMmwavedirection</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@1.1::IMmwavedirection/default</fqname>
+    </hal>
+    <hal format="hidl">
         <name>vendor.somc.hardware.security.secd</name>
         <transport>hwbinder</transport>
         <version>1.1</version>
