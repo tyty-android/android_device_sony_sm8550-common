@@ -1,0 +1,3 @@
+#! /vendor/bin/sh
+
+/vendor/bin/KmInstallKeybox Keybox_file Device_ID true rkp
