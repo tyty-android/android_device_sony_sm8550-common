@@ -200,6 +200,7 @@ PRODUCT_PACKAGES += \
 
 # Init
 PRODUCT_PACKAGES += \
+    fix_tee \
     fstab.zram \
     init.class_main.sh \
     init.kernel.post_boot.sh \

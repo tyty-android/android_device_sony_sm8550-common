@@ -928,6 +928,10 @@ vendor/lib64/libspcom.so
 vendor/bin/keyprovd
 vendor/etc/init/init.keyprovd.rc
 
+# Keybox Installer from missi-user 15 AQ3A.240912.001 OS2.0.200.7.VMCCNXM release-keys
+vendor/bin/KmInstallKeybox|eec557cc2133cc4f6504ee0b50971d16aac19c29
+vendor/lib64/libqtikeymaster4_teefix.so|30071a1f61d7a29eb9c18f253fbc1bee52ed0c8f
+
 # Limits
 vendor/bin/hw/vendor.qti.hardware.limits@1.2-service
 vendor/etc/init/vendor.qti.hardware.limits-service.rc

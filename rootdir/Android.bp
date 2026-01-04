@@ -107,3 +107,9 @@ sh_binary {
     src: "init.kernel.post_boot-kalama.sh",
     vendor: true,
 }
+
+sh_binary {
+    name: "fix_tee",
+    src: "fix_tee",
+    vendor: true,
+}
