@@ -202,6 +202,7 @@ debug.sf.early.sf.duration=15666666
 debug.sf.earlyGl.app.duration=16666666
 debug.sf.earlyGl.sf.duration=15666666
 debug.sf.enable_advanced_sf_phase_offset=1
+debug.sf.enable_adpf_cpu_hint=true
 debug.sf.enable_gl_backpressure=0
 debug.sf.enable_hwc_vds=0
 debug.sf.late.app.duration=16666666
@@ -221,6 +222,12 @@ ro.surface_flinger.protected_contents=true
 ro.surface_flinger.use_color_management=true
 ro.surface_flinger.use_content_detection_for_refresh_rate=true
 ro.surface_flinger.wcg_composition_dataspace=143261696
+
+# HWUI
+ro.hwui.render_ahead=3
+debug.hwui.use_hint_manager=true
+debug.hwui.target_cpu_time_percent=40
+debug.hwui.render_thread_count=2
 
 # Keystore
 ro.hardware.keystore_desede=true
