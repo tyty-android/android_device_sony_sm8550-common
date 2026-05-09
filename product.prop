@@ -25,3 +25,11 @@ persist.bluetooth.leaudio.notify.idle.during.call=true
 persist.bluetooth.leaudio_offload.disabled=false
 ro.bluetooth.leaudio_offload.supported=true
 ro.bluetooth.leaudio_switcher.supported=true
+
+# RKP
+remote_provisioning.enable_rkpd=true
+remote_provisioning.hostname=remoteprovisioning.googleapis.com
+
+# Google Client ID
+ro.com.google.clientidbase=android-sonymobile
+import /odm/etc/customization/oem/${ro.boot.hardware.sku}/config.prop *
