@@ -3,3 +3,10 @@ cc_library {
     system_ext_specific: true,
     srcs: ["av_audio_types_aidl_v1_ndk_shim.cpp"],
 }
+
+cc_library {
+    name: "libgui_my_shim",
+    system_ext_specific: true,
+    srcs: ["libgui_my_shim.cpp"],
+    shared_libs: ["libgui"],
+}

@@ -31,7 +31,8 @@
     <!-- Height of area above QQS where battery/time go. -->
     <dimen name="qs_header_row_min_height">48dp</dimen>
     <dimen name="large_screen_shade_header_height">48dp</dimen>
+    <dimen name="qs_header_height">48dp</dimen>
 
     <!-- Status bar height for lockscreen. -->
-    <dimen name="status_bar_header_height_keyguard">48dp</dimen>
+    <dimen name="status_bar_header_height_keyguard">36dp</dimen>
 </resources>

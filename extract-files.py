@@ -87,6 +87,10 @@ blob_fixups: blob_fixups_user_type = {
     ).add_line_if_missing(
         'gettid: 1'
     ),
+    'system_ext/etc/seccomp_policy/tcmd.policy': blob_fixup()
+    .add_line_if_missing(
+        'lseek: 1'
+    ),
     (
         'vendor/bin/hw/vendor.semc.hardware.extlight-service.somc',
         'vendor/lib64/vendor.semc.hardware.extlight-V1-ndk_platform.so',
@@ -149,7 +153,7 @@ blob_fixups: blob_fixups_user_type = {
         'av-audio-types-aidl-V1-ndk.so', 'av-audio-types-aidl-ndk.so'
     )
     .replace_needed(
-        'android.media.audio.common.types-V3-ndk.so', 'android.media.audio.common.types-V4-ndk.so'
+        'android.media.audio.common.types-V3-ndk.so', 'android.media.audio.common.types-V5-ndk.so'
     )
     .add_needed(
         'av-audio-types-aidl-V1-ndk_shim.so'
