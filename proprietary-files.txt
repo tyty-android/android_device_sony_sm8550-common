@@ -658,7 +658,7 @@ vendor/lib64/libeva_util.so
 # eUICC
 product/etc/permissions/jp.co.sony.mc.euiccmemoryreset.xml
 product/priv-app/EuiccGoogle/EuiccGoogle.apk;PRESIGNED
-product/priv-app/EuiccMemoryReset/EuiccMemoryReset.apk;PRESIGNED
+product/priv-app/EuiccMemoryReset/EuiccMemoryReset.apk:vendor/priv-app/EuiccMemoryReset/EuiccMemoryReset.apk;PRESIGNED
 
 # ExtLight
 vendor/bin/hw/vendor.semc.hardware.extlight-service.somc
