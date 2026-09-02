@@ -902,6 +902,12 @@ vendor/lib64/vendor.qti.imsrtpservice@3.0.so;MODULE_SUFFIX=_vendor
 vendor/lib64/vendor.qti.imsrtpservice@3.1-service-Impl.so
 vendor/lib64/vendor.qti.imsrtpservice@3.1.so;MODULE_SUFFIX=_vendor
 
+# Identity
+vendor/bin/hw/android.hardware.identity-service-qti
+vendor/etc/init/android.hardware.identity-service-qti.rc
+vendor/etc/vintf/manifest/manifest_identity_credential.xml
+vendor/lib64/libqtiidentitycredential.so
+
 # IRQ balance
 vendor/bin/msm_irqbalance
 vendor/etc/msm_irqbalance.conf
