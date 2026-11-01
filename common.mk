@@ -479,3 +479,7 @@ PRODUCT_PACKAGES += \
 
 # Inherit from proprietary files makefile
 $(call inherit-product, vendor/sony/sm8550-common/sm8550-common-vendor.mk)
+
+# Load the extra themed icons
+$(call inherit-product, vendor/google/overlays/ThemeIcons/config.mk)
+
